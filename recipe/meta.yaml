@@ -47,6 +47,8 @@ about:
   summary: A set of data tools in Python
   license: BSD-3-Clause
   license_file: LICENSE
+  doc_url: http://shakedzy.xyz/dython/getting_started/installation/
+  dev_url: http://shakedzy.xyz/dython/modules/data_utils/
 
 extra:
   recipe-maintainers:
