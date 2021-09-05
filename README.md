@@ -9,6 +9,10 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dython-feedstoc
 
 Summary: A set of data tools in Python
 
+Development: http://shakedzy.xyz/dython/modules/data_utils/
+
+Documentation: http://shakedzy.xyz/dython/getting_started/installation/
+
 Current build status
 ====================
 
