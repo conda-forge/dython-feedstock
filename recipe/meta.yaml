@@ -1,5 +1,5 @@
 {% set name = "dython" %}
-{% set version = "0.6.7" %}
+{% set version = "0.6.7.post2" %}
 
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a152c871ffdcacf31f1e135dff0423de3533ad09287baacf4b6d6657aefbd0c2
+  sha256: 9bb87481236ad6141e42e9ae353aeac94bcce70fedf8ec2e161d937eed67c2f0
 
 build:
   number: 0
   noarch: python
-  script: 
+  script:
     - cp ${RECIPE_DIR}/VERSION .  # [not win]
     - cp ${RECIPE_DIR}/DESCRIPTION.md .  # [not win]
     - copy %RECIPE_DIR%\VERSION .  # [win]
