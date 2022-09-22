@@ -33,6 +33,7 @@ requirements:
     - scikit-plot >=0.3.7
     - scipy
     - seaborn
+    - psutil >=5.9.1
 
 test:
   imports:
