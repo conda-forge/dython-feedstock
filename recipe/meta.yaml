@@ -1,5 +1,5 @@
 {% set name = "dython" %}
-{% set version = "0.7.3" %}
+{% set version = "0.7.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6dab0e7fe177b4c8686e369e9fcadc5af37439a1f728c6023774c84e4051291e
+  sha256: 0482c1a1eca8b6e0b7725116f39b833ddb57ed0ff6bf28f6aca4dbbc0f7134a1
 
 build:
   number: 0
