@@ -1,11 +1,11 @@
-About dython
-============
+About dython-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dython-feedstock/blob/main/LICENSE.txt)
 
 Home: http://shakedzy.xyz/dython
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dython-feedstock/blob/main/LICENSE.txt)
 
 Summary: A set of data tools in Python
 
