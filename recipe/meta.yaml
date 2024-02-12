@@ -11,12 +11,12 @@ source:
   sha256: 3be9f2680e53d8f4b6d75ab7f3f4826cbc7734989d0be084772318f1d3d18a7d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
-    - cp ${RECIPE_DIR}/VERSION .  # [not win]
+    - echo $PKG_VERSION > VERSION  # [not win]
     - cp ${RECIPE_DIR}/DESCRIPTION.md .  # [not win]
-    - copy %RECIPE_DIR%\VERSION .  # [win]
+    - echo %PKG_VERSION% > VERSION  # [win]
     - copy %RECIPE_DIR%\DESCRIPTION.md .  # [win]
     - {{ PYTHON }} -m pip install . -vv
 
