@@ -26,14 +26,15 @@ requirements:
     - python >=3.6
   run:
     - matplotlib-base
-    - numpy
-    - pandas >=0.23.4
-    - python >=3.6
-    - scikit-learn
-    - scikit-plot >=0.3.7
-    - scipy
-    - seaborn
+    - matplotlib >=3.6.0
+    - numpy >=1.23.0
+    - pandas >=1.4.2
     - psutil >=5.9.1
+    - python >=3.6
+    - scikit-learn >=0.24.2
+    #- scikit-plot >=0.3.7
+    - scipy >=1.7.1
+    - seaborn >=0.12.0
 
 test:
   imports:
