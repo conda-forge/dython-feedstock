@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 6fa352a1ca5bfeaa3d6505387ac98b58068261e8bc489441d4f378351a5d9b1a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - echo $PKG_VERSION > VERSION  # [not win]
@@ -23,14 +23,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - matplotlib-base
     - matplotlib >=3.6.0
     - numpy >=1.23.0
     - pandas >=1.4.2
     - psutil >=5.9.1
-    - python >=3.6
+    - python >={{ python_min }}
     - scikit-learn >=0.24.2
     #- scikit-plot >=0.3.7
     - scipy >=1.7.1
@@ -43,6 +43,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://shakedzy.xyz/dython
