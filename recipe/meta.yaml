@@ -24,9 +24,9 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
-    - matplotlib-base
-    - matplotlib >=3.6.0
+    - matplotlib-base >=3.6.0
     - numpy >=1.23.0
     - pandas >=1.4.2
     - psutil >=5.9.1
