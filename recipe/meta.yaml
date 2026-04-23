@@ -1,5 +1,5 @@
 {% set name = "dython" %}
-{% set version = "0.7.10" %}
+{% set version = "0.7.11" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 95d2277ae58e20091e237f61a5efef8f1e2bbdd6773b043ff0da9bb676b5e64d
+  sha256: f8e7bdb05fafe21c9cd2e146222f49c4864c07723f7c2e1cf848a03b3a6937d1
 
 build:
   number: 0
@@ -33,7 +33,7 @@ requirements:
     - python >={{ python_min }}
     - scikit-learn >=0.24.2
     #- scikit-plot >=0.3.7
-    - scipy >=1.7.1
+    - scipy >=1.15.3
     - seaborn >=0.12.0
 
 test:
